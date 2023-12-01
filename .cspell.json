@@ -9,5 +9,13 @@
     }
   ],
   "dictionaries": ["project-words"],
-  "ignorePaths": ["target", "/project-words.txt"]
+  "ignorePaths": [
+    ".vscode",
+    "**/.git/**",
+    "**/.pnpm-lock.json",
+    "**/node_modules/**",
+    "**/vscode-extension/**",
+    "/project-words.txt",
+    "megalinter-reports"
+  ]
 }

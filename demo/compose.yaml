@@ -1,6 +1,5 @@
 name: torrust
 services:
-
   idx-fron:
     image: torrust/index-frontend:develop
     user: ${TORRUST_IDX_FRON_USER_UID:-1000}:${TORRUST_IDX_FRON_USER_UID:-1000}
@@ -27,7 +26,7 @@ services:
     ports:
       - 3001:3001
     volumes:
-      - ./storage:/app/storage    
+      - ./storage:/app/storage
     depends_on:
       - tracker
       - mailcatcher
@@ -60,12 +59,12 @@ services:
 
   mysql:
     image: mysql:8.0
-    command: '--default-authentication-plugin=mysql_native_password'
+    command: "--default-authentication-plugin=mysql_native_password"
     healthcheck:
       test:
         [
-          'CMD-SHELL',
-          'mysqladmin ping -h 127.0.0.1 --password="$$(cat /run/secrets/db-password)" --silent'
+          "CMD-SHELL",
+          'mysqladmin ping -h 127.0.0.1 --password="$$(cat /run/secrets/db-password)" --silent',
         ]
       interval: 3s
       retries: 5

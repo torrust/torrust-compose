@@ -1,5 +1,7 @@
 # Docker compose configuration for the Torrust Index
 
+[![MegaLinter](https://github.com/torrust/torrust-compose/actions/workflows/mega-linter.yml/badge.svg)](https://github.com/torrust/torrust-compose/actions/workflows/mega-linter.yml)
+
 This repo contains different sample Docker Compose configurations for the Torrust Index.
 
 The current configurations are:

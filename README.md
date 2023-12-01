@@ -31,5 +31,33 @@ We welcome contributions from the community!
 
 How can you contribute?
 
+- Add new examples.
 - Bug reports and feature requests.
 - Code contributions. You can start by looking at the issues labeled ["good first issues"](https://github.com/torrust/torrust-compose/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
+
+### MegaLinter
+
+Running MegaLinter locally:
+
+```console
+npx mega-linter-runner
+```
+
+Run and try to fix issues:
+
+```console
+npx mega-linter-runner --fix
+```
+
+Run only one type of linter using the linter `Descriptor`:
+
+```console
+npx mega-linter-runner -e "'ENABLE=MARKDOWN'"
+```
+
+Run only one linter using the linter `Key`:
+
+```console
+npx mega-linter-runner -e "'ENABLE_LINTERS=JSON_PRETTIER'"
+```
+

@@ -1,2 +1,9 @@
+certbot
+certonly
 DEVSKIM
+fullchain
 KICS
+letsencrypt
+privkey
+regr
+webroot

@@ -64,7 +64,7 @@ docker compose exec proxy ls -la /etc/letsencrypt/live
 Generate your key with the openssl command:
 
 ```console
-sudo openssl dhparam -out /home/torrust/github/josecelano/torrust-compose/droplet/storage/dhparam/dhparam-2048.pem 2048
+sudo openssl dhparam -out /home/torrust/github/torrust/torrust-compose/droplet/storage/dhparam/dhparam-2048.pem 2048
 ```
 
 Edit the Nginx config file:
@@ -205,13 +205,13 @@ storage
 To start the application:
 
 ```s
-./bin/start.sh
+docker compose up --build --detach
 ```
 
 To stop the application:
 
 ```s
-./bin/stop.sh
+docker compose down
 ```
 
 By default, the application will:
@@ -229,4 +229,26 @@ fbed1b994c7a   nginx:mainline-alpine       "/docker-entrypoint.…"   4 minutes 
 5d8e6fb74102   torrust/index-gui:develop   "/usr/local/bin/entr…"   4 minutes ago   Up 4 minutes (healthy)   0.0.0.0:3000->3000/tcp, :::3000->3000/tcp                                                                                                   index-gui
 60854e389bb7   torrust/index:develop       "/usr/local/bin/entr…"   4 minutes ago   Up 4 minutes (healthy)   0.0.0.0:3001->3001/tcp, :::3001->3001/tcp                                                                                                   index
 16b1a40d96f9   torrust/tracker:develop     "/usr/local/bin/entr…"   4 minutes ago   Up 4 minutes (healthy)   0.0.0.0:1212->1212/tcp, :::1212->1212/tcp, 0.0.0.0:7070->7070/tcp, :::7070->7070/tcp, 1313/tcp, 0.0.0.0:6969->6969/udp, :::6969->6969/udp   tracker
+```
+
+Other commands are:
+
+Restart all (reloading env vars from `.env` file by forcing recreation):
+
+```console
+docker compose up -d --force-recreate
+```
+
+Restart proxy (to reload Nginx configuration):
+
+```console
+docker compose --ansi never restart proxy
+```
+
+Update container images (to upgrade the services):
+
+```console
+docker compose down
+docker compose pull
+docker compose up --build --detach
 ```

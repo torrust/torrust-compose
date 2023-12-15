@@ -10,6 +10,6 @@ cd /home/torrust/github/torrust/torrust-compose/droplet || exit
 
 # Renew certificates that are close to expiring and restart proxy server
 # to reload Nginx congiuration.
-$COMPOSE run certbot renew && ./bin/restart_proxy.sh
+$COMPOSE run certbot renew && $COMPOSE --ansi never restart proxy
 
 $DOCKER system prune -af

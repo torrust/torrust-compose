@@ -34,7 +34,7 @@ fi
 mkdir -p ./storage/index/etc
 
 if ! [ -f "./storage/index/etc/index.prod.container.sqlite3.toml" ]; then
-	echo "Crating index configuration: './storage/index/etc/index.toml'"
+	echo "Creating index configuration: './storage/index/etc/index.toml'"
 	cp ./share/container/default/config/index.prod.container.sqlite3.toml ./storage/index/etc/index.toml
 fi
 
@@ -51,6 +51,6 @@ fi
 mkdir -p ./storage/tracker/etc
 
 if ! [ -f "./storage/tracker/etc/tracker.prod.container.sqlite3.toml" ]; then
-	echo "Crating tracker configuration: './storage/tracker/etc/tracker.toml'"
+	echo "Creating tracker configuration: './storage/tracker/etc/tracker.toml'"
 	cp ./share/container/default/config/tracker.prod.container.sqlite3.toml ./storage/tracker/etc/tracker.toml
 fi

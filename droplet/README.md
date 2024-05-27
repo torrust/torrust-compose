@@ -28,7 +28,7 @@ Edit the `.env` file to change the default Tracker API token:
 
 ```console
 TORRUST_INDEX_TRACKER_API_TOKEN="your_secret_token"
-TORRUST_TRACKER_API_ADMIN_TOKEN="your_secret_token"
+TORRUST_TRACKER_CONFIG_OVERRIDE_HTTP_API__ACCESS_TOKENS__ADMIN="your_secret_token"
 ```
 
 ### HTTPS

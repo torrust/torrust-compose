@@ -1,0 +1,9 @@
+db_path = "/var/lib/torrust/tracker/database/sqlite3.db"
+
+[[http_trackers]]
+ssl_cert_path = "/var/lib/torrust/tracker/tls/localhost.crt"
+ssl_key_path = "/var/lib/torrust/tracker/tls/localhost.key"
+
+[http_api]
+ssl_cert_path = "/var/lib/torrust/tracker/tls/localhost.crt"
+ssl_key_path = "/var/lib/torrust/tracker/tls/localhost.key"

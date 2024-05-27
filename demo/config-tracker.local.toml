@@ -1,8 +1,8 @@
 log_level = "info"
 mode = "public"
 db_driver = "Sqlite3"
-db_path = "./storage/database/torrust_tracker_develop.db" # SQLite
-#db_path = "mysql://root:root_secret_password@mysql:3306/torrust_tracker_develop" # MySQL
+db_path = "/var/lib/torrust/tracker/database/torrust_tracker_demo.db" # SQLite
+#db_path = "mysql://root:root_secret_password@mysql:3306/torrust_tracker_demo" # MySQL
 announce_interval = 120
 min_announce_interval = 120
 max_peer_timeout = 900

@@ -10,10 +10,10 @@ It uses the latest `develop` branches. It's only intended to test the Torrust In
 ## Install
 
 ```s
-mkdir ~/Tmp && cd ~/Tmp
-git clone git@github.com:torrust/torrust-compose.git
-cd torrust-compose/demo
-./bin/install.sh
+mkdir ~/Tmp && cd ~/Tmp \
+  && git clone git@github.com:torrust/torrust-compose.git \
+  && cd torrust-compose/demo \
+  && ./bin/install.sh
 ```
 
 ## Usage

@@ -62,4 +62,3 @@ Run only one linter using the linter `Key`:
 ```console
 npx mega-linter-runner -e "'ENABLE_LINTERS=JSON_PRETTIER'"
 ```
-

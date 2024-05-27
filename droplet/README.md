@@ -225,10 +225,10 @@ After starting the application you should see these running containers:
 ```s
 $ docker ps
 CONTAINER ID   IMAGE                       COMMAND                  CREATED         STATUS                   PORTS                                                                                                                                       NAMES
-fbed1b994c7a   nginx:mainline-alpine       "/docker-entrypoint.…"   4 minutes ago   Up 4 minutes             0.0.0.0:80->80/tcp, :::80->80/tcp, 0.0.0.0:443->443/tcp, :::443->443/tcp                                                                    proxy
-5d8e6fb74102   torrust/index-gui:develop   "/usr/local/bin/entr…"   4 minutes ago   Up 4 minutes (healthy)   0.0.0.0:3000->3000/tcp, :::3000->3000/tcp                                                                                                   index-gui
-60854e389bb7   torrust/index:develop       "/usr/local/bin/entr…"   4 minutes ago   Up 4 minutes (healthy)   0.0.0.0:3001->3001/tcp, :::3001->3001/tcp                                                                                                   index
-16b1a40d96f9   torrust/tracker:develop     "/usr/local/bin/entr…"   4 minutes ago   Up 4 minutes (healthy)   0.0.0.0:1212->1212/tcp, :::1212->1212/tcp, 0.0.0.0:7070->7070/tcp, :::7070->7070/tcp, 1313/tcp, 0.0.0.0:6969->6969/udp, :::6969->6969/udp   tracker
+fbed1b994c7a   nginx:mainline-alpine       "/docker-entrypoint.sh"   4 minutes ago   Up 4 minutes             0.0.0.0:80->80/tcp, :::80->80/tcp, 0.0.0.0:443->443/tcp, :::443->443/tcp                                                                    proxy
+5d8e6fb74102   torrust/index-gui:develop   "/usr/local/bin/entrypoint.sh"   4 minutes ago   Up 4 minutes (healthy)   0.0.0.0:3000->3000/tcp, :::3000->3000/tcp                                                                                                   index-gui
+60854e389bb7   torrust/index:develop       "/usr/local/bin/entrypoint.sh"   4 minutes ago   Up 4 minutes (healthy)   0.0.0.0:3001->3001/tcp, :::3001->3001/tcp                                                                                                   index
+16b1a40d96f9   torrust/tracker:develop     "/usr/local/bin/entrypoint.sh"   4 minutes ago   Up 4 minutes (healthy)   0.0.0.0:1212->1212/tcp, :::1212->1212/tcp, 0.0.0.0:7070->7070/tcp, :::7070->7070/tcp, 1313/tcp, 0.0.0.0:6969->6969/udp, :::6969->6969/udp   tracker
 ```
 
 Other commands are:

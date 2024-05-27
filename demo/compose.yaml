@@ -1,3 +1,4 @@
+---
 name: torrust
 services:
   index-gui:
@@ -77,7 +78,7 @@ services:
       test:
         [
           "CMD-SHELL",
-          'mysqladmin ping -h 127.0.0.1 --password="$$(cat /run/secrets/db-password)" --silent'
+          'mysqladmin ping -h 127.0.0.1 --password="$$(cat /run/secrets/db-password)" --silent',
         ]
       interval: 3s
       retries: 5

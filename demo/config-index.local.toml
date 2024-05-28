@@ -20,8 +20,8 @@ max_password_length = 64
 secret_key = "MaxVerstappenWC2021"
 
 [database]
-connect_url = "sqlite://storage/database/torrust_index_backend_develop.db?mode=rwc" # SQLite
-#connect_url = "mysql://root:root_secret_password@mysql:3306/torrust_index_backend_develop" # MySQL
+connect_url = "sqlite:///var/lib/torrust/index/database/torrust_index_demo.db?mode=rwc" # SQLite
+#connect_url = "mysql://root:root_secret_password@mysql:3306/torrust_index_demo" # MySQL
 
 [mail]
 email_verification_enabled = false

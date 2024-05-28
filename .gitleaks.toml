@@ -1,14 +1,11 @@
 
 title = "gitleaks config"
-
 [extend]
 # useDefault will extend the base configuration with the default gitleaks config:
 # https://github.com/zricethezav/gitleaks/blob/master/config/gitleaks.toml
 useDefault = true
-
 [allowlist]
-    description = "Allowlisted files"
-    paths = [
+paths = [
     '''.automation/test''',
     '''megalinter-reports''',
     '''.github/linters''',
@@ -17,4 +14,9 @@ useDefault = true
     '''(.*?)gitleaks\.toml$''',
     '''(.*?)(png|jpg|gif|doc|docx|pdf|bin|xls|pyc|zip)$''',
     '''(go.mod|go.sum)$''',
-    '''demo/config-idx-back.local.toml''']
+    '''demo/config-idx-back.local.toml''',
+    '''demo/config-index.local.toml''',
+    '''demo/config-tracker.local.toml''',
+    '''droplet/share/container/default/config/index.prod.container.sqlite3.toml''',
+]
+description = "Allowlisted files"

@@ -23,8 +23,12 @@ mkdir -p ./storage/certbot/lib
 
 ## Index
 
-# Generate the Index sqlite database directory and file if it does not exist
+mkdir -p ./storage/index/etc
 mkdir -p ./storage/index/lib/database
+mkdir -p ./storage/index/lib/tls
+mkdir -p ./storage/index/log
+
+# Generate the Index sqlite database directory and file if it does not exist
 
 if ! [ -f "./storage/index/lib/database/sqlite3.db" ]; then
 	echo "Creating index database: './storage/index/lib/database/sqlite3.db'"
@@ -40,8 +44,12 @@ fi
 
 ## Tracker
 
-# Generate the Tracker sqlite database directory and file if it does not exist
+mkdir -p ./storage/tracker/etc
 mkdir -p ./storage/tracker/lib/database
+mkdir -p ./storage/tracker/lib/tls
+mkdir -p ./storage/tracker/lib/log
+
+# Generate the Tracker sqlite database directory and file if it does not exist
 
 if ! [ -f "./storage/tracker/lib/database/sqlite3.db" ]; then
 	echo "Creating tracker database: './storage/tracker/lib/database/sqlite3.db'"

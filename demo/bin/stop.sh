@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TORRUST_INDEX_USER_UID=${TORRUST_INDEX_USER_UID:-1000} \
-	TORRUST_INDEX_CONFIG_TOML=$(cat config-idx-back.local.toml) \
+	TORRUST_INDEX_CONFIG_TOML=$(cat config-index.local.toml) \
 	TORRUST_TRACKER_CONFIG_TOML=$(cat config-tracker.local.toml) \
 	TORRUST_TRACKER_CONFIG_OVERRIDE_HTTP_API__ACCESS_TOKENS__ADMIN=${TORRUST_TRACKER_CONFIG_OVERRIDE_HTTP_API__ACCESS_TOKENS__ADMIN:-MyAccessToken} \
 	docker compose down

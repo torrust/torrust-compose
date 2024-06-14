@@ -1,16 +1,10 @@
-# Please override the tracker token: 
-# `TORRUST_INDEX_CONFIG_OVERRIDE_TRACKER__TOKEN`
-# And the auth screte key:
-# `TORRUST_INDEX_CONFIG_OVERRIDE_AUTH__SECRET_KEY`
-# environmental variables!
-
 [tracker]
-url = "udp://tracker.torrust-demo.com:6969"
 api_url = "http://tracker:1212"
+url = "udp://tracker.torrust-demo.com:6969"
 
 [database]
 connect_url = "sqlite:///var/lib/torrust/index/database/sqlite3.db?mode=rwc"
 
-[mail]
-server = "mailcatcher"
+[mail.smtp]
 port = 1025
+server = "mailcatcher"

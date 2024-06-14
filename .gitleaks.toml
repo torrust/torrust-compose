@@ -7,16 +7,18 @@ useDefault = true
 [allowlist]
 paths = [
     '''.automation/test''',
-    '''megalinter-reports''',
     '''.github/linters''',
-    '''node_modules''',
     '''.mypy_cache''',
-    '''(.*?)gitleaks\.toml$''',
     '''(.*?)(png|jpg|gif|doc|docx|pdf|bin|xls|pyc|zip)$''',
+    '''(.*?)gitleaks\.toml$''',
     '''(go.mod|go.sum)$''',
     '''demo/config-idx-back.local.toml''',
     '''demo/config-index.local.toml''',
     '''demo/config-tracker.local.toml''',
+    '''demo/dot.env.local''',
+    '''droplet/.env.production''',
     '''droplet/share/container/default/config/index.prod.container.sqlite3.toml''',
+    '''megalinter-reports''',
+    '''node_modules''',
 ]
 description = "Allowlisted files"

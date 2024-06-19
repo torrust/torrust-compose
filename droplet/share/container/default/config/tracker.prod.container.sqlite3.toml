@@ -1,14 +1,11 @@
-# Please override the admin token setting the
-# `TORRUST_TRACKER_CONFIG_OVERRIDE_HTTP_API__ACCESS_TOKENS__ADMIN`
-# environmental variable!
-
-db_path = "/var/lib/torrust/tracker/database/sqlite3.db"
+[core.database]
+path = "/var/lib/torrust/tracker/database/sqlite3.db"
 
 [[udp_trackers]]
-enabled = true
+bind_address = "0.0.0.0:6969"
 
 [[http_trackers]]
-enabled = true
+bind_address = "0.0.0.0:7070"
 
 [http_api]
-enabled = true
+bind_address = "0.0.0.0:1212"

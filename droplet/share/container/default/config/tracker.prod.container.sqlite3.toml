@@ -1,4 +1,21 @@
+[logging]
+log_level = "info"
+
+[core]
+mode = "public"
+
+[core.tracker_policy]
+persistent_torrent_completed_stat = true
+
+[core.announce_policy]
+interval = 300
+interval_min = 300
+
+[core.net]
+on_reverse_proxy = true
+
 [core.database]
+driver = "Sqlite3"
 path = "/var/lib/torrust/tracker/database/sqlite3.db"
 
 [[udp_trackers]]

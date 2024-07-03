@@ -1,8 +1,16 @@
-# Please override the following settings with environmental variable!
-# tracker::token   -> `TORRUST_INDEX_CONFIG_OVERRIDE_TRACKER__TOKEN`
-# auth::secret_key -> `TORRUST_INDEX_CONFIG_OVERRIDE_AUTH__SECRET_KEY`
+version = "2"
 
-log_level = "info"
+[logging]
+#threshold = "off"
+#threshold = "error"
+#threshold = "warn"
+threshold = "info"
+#threshold = "debug"
+#threshold = "trace"
+
+[tracker]
+listed = false
+private = false
 
 [database]
 connect_url = "sqlite:///var/lib/torrust/index/database/sqlite3.db?mode=rwc"

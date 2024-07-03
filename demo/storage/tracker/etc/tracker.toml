@@ -1,3 +1,17 @@
+version = "2"
+
+[logging]
+#threshold = "off"
+#threshold = "error"
+#threshold = "warn"
+threshold = "info"
+#threshold = "debug"
+#threshold = "trace"
+
+[core]
+listed = false
+private = false
+
 [core.database]
 path = "/var/lib/torrust/tracker/database/sqlite3.db"
 

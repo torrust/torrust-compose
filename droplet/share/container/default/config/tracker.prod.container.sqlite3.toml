@@ -1,8 +1,16 @@
+version = "2"
+
 [logging]
-log_level = "info"
+#threshold = "off"
+#threshold = "error"
+#threshold = "warn"
+threshold = "info"
+#threshold = "debug"
+#threshold = "trace"
 
 [core]
-mode = "public"
+listed = false
+private = false
 
 [core.tracker_policy]
 persistent_torrent_completed_stat = true

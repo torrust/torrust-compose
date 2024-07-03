@@ -1,5 +1,17 @@
+version = "2"
+
+[logging]
+#threshold = "off"
+#threshold = "error"
+#threshold = "warn"
+threshold = "info"
+#threshold = "debug"
+#threshold = "trace"
+
 [tracker]
 api_url = "http://tracker:1212"
+listed = false
+private = false
 
 [database]
 connect_url = "sqlite:///var/lib/torrust/index/database/torrust_index_demo.db?mode=rwc" # SQLite

@@ -23,7 +23,7 @@ interval_min = 300
 on_reverse_proxy = true
 
 [core.database]
-driver = "Sqlite3"
+driver = "sqlite3"
 path = "/var/lib/torrust/tracker/database/sqlite3.db"
 
 [[udp_trackers]]

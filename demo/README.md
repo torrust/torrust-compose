@@ -36,6 +36,8 @@ By default, the application will:
 - Use the `./storage/database` directory to store the data.
 - Use SQLite as the database engine.
 
+> NOTE: First thing you should do is to create the `admin` user. You can do it by signing up <http://localhost:3000/signup>. First registered user is the only `admin` user.
+
 After starting the application you should see these running containers:
 
 ```s
@@ -47,3 +49,10 @@ a8bf2370e427   torrust/index-gui:develop   "/usr/local/bin/entrypoint.sh"   5 se
 9e72b195abf1   mysql:8.0                   "docker-entrypoint.s…"   5 seconds ago   Up 4 seconds (healthy)            0.0.0.0:3306->3306/tcp, :::3306->3306/tcp, 33060/tcp                                                       torrust-mysql-1
 dd8db76545eb   dockage/mailcatcher:0.8.2   "entrypoint mailcatcher"   5 seconds ago   Up 4 seconds                      0.0.0.0:1025->1025/tcp, :::1025->1025/tcp, 0.0.0.0:1080->1080/tcp, :::1080->1080/tcp                       torrust-mailcatcher-1
 ```
+
+## Documentation
+
+- Tracker: <https://docs.rs/torrust-tracker/latest/torrust_tracker/>
+- Index: <https://docs.rs/torrust-index/latest/torrust_index/>
+- Config: <https://docs.rs/torrust-tracker-configuration/latest/torrust_tracker_configuration/>
+- GUI: <https://github.com/torrust/torrust-index-gui/blob/develop/docs/index.md>

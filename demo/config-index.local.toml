@@ -7,8 +7,8 @@ schema_version = "2.0.0"
 #threshold = "off"
 #threshold = "error"
 #threshold = "warn"
-threshold = "info"
-#threshold = "debug"
+#threshold = "info"
+threshold = "debug"
 #threshold = "trace"
 
 [tracker]
@@ -23,3 +23,6 @@ connect_url = "sqlite:///var/lib/torrust/index/database/torrust_index_demo.db?mo
 [mail]
 server = "mailcatcher"
 port = 1025
+
+[registration]
+[registration.email]
